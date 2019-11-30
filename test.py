@@ -6,8 +6,7 @@ from models.spmodel import SPNet
 import numpy as np
 
 model = SPNet('p1127.txt', 128)
-model.load_state_dict(torch.load('output/params_17.pth'))
-# model = torch.load('output/model.pth')
+model.load_state_dict(torch.load('output/params_14.pth'))
 model.eval()
 if torch.cuda.is_available():
     model.cuda()

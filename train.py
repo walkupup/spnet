@@ -34,7 +34,7 @@ def train():
     if args.cuda:
         torch.backends.cudnn.benchmark = True
 
-    #os.makedirs('./output', exist_ok=True)
+    os.makedirs('./output', exist_ok=True)
     filelist = os.listdir(args.datapath)
     f = open('1.txt', 'wt')
     for i in range(len(filelist)):
